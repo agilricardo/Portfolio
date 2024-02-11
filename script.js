@@ -8,7 +8,6 @@ toggle.onclick = () => {
   toggle.classList.toggle("active");
 };
 
-// Tambahkan event listener pada setiap elemen "li a"
 document.querySelectorAll("li a").forEach((menuItem) => {
   menuItem.addEventListener("click", () => {
     navbar.classList.remove("show");
@@ -25,6 +24,13 @@ window.onscroll = () => {
   }
 };
 // NAVBAR SCRIPT END
+
+// PRELOADER
+$(document).ready(function () {
+  $(".preloader").delay(2000).fadeOut();
+});
+// PRELOADER END
+
 // TEXT AUTO INPUT
 let typed = new Typed(".auto-input", {
   strings: ["Designer", "Developer"],
@@ -34,30 +40,18 @@ let typed = new Typed(".auto-input", {
 });
 // TEXT AUTO INPUT END
 
-// SCROLL REVEAL
-const sr = ScrollReveal({
-  distance: "40px",
-  duration: 2500,
-  reset: true,
-});
-
-sr.reveal(".main .content h4", { delay: 200, origin: "top" });
-sr.reveal(".main .content h1", { delay: 400, origin: "left" });
-sr.reveal(".main .content p", { delay: 600, origin: "right" });
-sr.reveal(".main .content button", { delay: 800, origin: "bottom" });
-sr.reveal(".main .image", { delay: 1000, origin: "right" });
-// SCROLL REVEAL END
-
 // DARK MODE
 const body = document.querySelector("body"),
   tombol = document.querySelector(".tombol"),
-  aboutImage = document.querySelector(".about .image img");
+  aboutImage = document.querySelector(".about .image img"),
+  logoImage = document.querySelector("nav .logo a img");
 
 let mode = localStorage.getItem("mode");
 if (mode && mode === "dark") {
   body.classList.add("dark");
   tombol.classList.add("active");
-  aboutImage.src = "assets/about-dark.png";
+  aboutImage.src = "assets/about body.dark.png";
+  logoImage.src = "assets/logo body.dark.png";
 }
 
 tombol.addEventListener("click", () => {
@@ -68,11 +62,13 @@ tombol.addEventListener("click", () => {
     localStorage.setItem("mode", "light");
 
     aboutImage.src = "assets/about.png";
+    logoImage.src = "assets/logo.png";
     return;
   }
 
   localStorage.setItem("mode", "dark");
-  aboutImage.src = "assets/about-dark.png";
+  aboutImage.src = "assets/about body.dark.png";
+  logoImage.src = "assets/logo body.dark.png";
 });
 
 // Remove redundant click event listener
