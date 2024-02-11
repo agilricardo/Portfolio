@@ -3,20 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agil Ricardo | Portfolio</title>
+    <title>Portfolio | Agil Ricardo</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/svg" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- PRELOADER -->
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
+      <div class="preloader">
+        <div class="loading">
+          <div class="loadingio-spinner-pulse-alxw7r8w04j">
+            <div class="ldio-httw68wddi">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="header">
         <nav>
           <div class="logo">
-            <a href="#"
-              ><span><i class="fa-solid fa-arrows-split-up-and-left"></i>AgilRicardo</span></a
-            >
+            <a href="#"><img src="assets/logo.png" alt="" /><span>GILRICARDO</span></a>
           </div>
           <ul>
             <li><a href="#main">Home</a></li>
@@ -24,13 +38,9 @@
             <li><a href="#service">Service</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Portfolio</a></li>
-            <li><a href="#contact" class="link-terakhir">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li class="tombol"><a href=""></a></li>
           </ul>
-
-          <!-- <div class="contact">
-            <button><a href="#contact">Contact Now</a></button>
-          </div> -->
           <div class="toggle">
             <i class="fa fa-bars"></i>
             <i class="fa fa-times"></i>
@@ -54,8 +64,8 @@
           <img src="assets/about.png" alt="Agil Ricardo Photo" />
         </div>
         <div class="content">
-          <h2>I am learning to be a web developer & designer.</h2>
-          <p>By working hard, we can change destiny. My full name is "Agil Rikardo", my address is Bangunsari village Rt 6 Rw 8, Pamarican district. When working on this portfolio I was still in grade 11 at SMKN 1 Banjar.</p>
+          <h2>By working hard, we can change destiny.</h2>
+          <p>I am a web Developer & Designer. My full name is "Agil Rikardo", my address is Bangunsari village, Pamarican district. When working on this portfolio I was still in grade 11 at SMKN 1 Banjar.</p>
           <div class="project-client">
             <div class="project">
               <span>150+</span>
@@ -150,7 +160,7 @@
         </div>
       </div>
       <div class="intrest">
-        <h2>Intrested Working With me?</h2>
+        <h2>Intrested Working With Me?</h2>
         <button><a href="#contact">Contact Now</a></button>
       </div>
       <div id="projects">
@@ -158,13 +168,13 @@
         <div class="projects">
           <div class="project">
             <div class="image">
-              <img src="assets/project1.png" alt="Project 1 Photo" />
+              <img src="assets/project1.png" alt="Project 5 Photo" />
             </div>
             <div class="content">
               <h6>PROJECT 1</h6>
-              <h2>Web Design For One's Portfolio</h2>
-              <p>Responsive website portfolio. this is my first portfolio. created with the HTML, CSS and JavaScript programming languages</p>
-              <button><a href="https://percobaanportofolioagil.netlify.app/">View Project</a></button>
+              <h2>Filter Gallery Website</h2>
+              <p>Responsive filterable image gallery that can be filled for personal needs. Using HTML, CSS and JavaScript</p>
+              <button><a href="https://gallery-agilricardo.netlify.app">View Project</a></button>
             </div>
           </div>
 
@@ -186,35 +196,11 @@
             </div>
             <div class="content">
               <h6>PROJECT 3</h6>
-              <h2>Web Design For Education</h2>
-              <p>An online platform that provides easy access to educational information, with an innovative design.</p>
-              <button><a href="https://latihan1-rplsmkn1banjar.netlify.app">View Project</a></button>
+              <h2>Web Design For E-commerce</h2>
+              <p>An online flower shop web design that makes choosing and buying easy, with features and payment options that increase shopping convenience.</p>
+              <button><a href="https://rasflowers.netlify.app">View Project</a></button>
             </div>
           </div>
-
-          <div class="project">
-            <div class="content">
-              <h6>PROJECT 4</h6>
-              <h2>Web Design For Education</h2>
-              <p>An online platform that provides easy access to educational information, with an innovative design.</p>
-              <button><a href="https://latihan2-rplsmkn1banjar.netlify.app/">View Project</a></button>
-            </div>
-            <div class="image">
-              <img src="assets/project4.png" alt="Project 4 Photo" />
-            </div>
-          </div>
-
-          <!-- <div class="project">
-            <div class="image">
-              <img src="assets/project5.png" alt="Project 3 Photo" />
-            </div>
-            <div class="content">
-              <h6>PROJECT 5</h6>
-              <h2>Filter Gallery Website</h2>
-              <p>Responsive filterable image gallery that can be filled for personal needs. Using HTML, CSS and JavaScript</p>
-              <button><a href="https://gallery-agilricardo.netlify.app">View Project</a></button>
-            </div>
-          </div> -->
         </div>
       </div>
       <div id="contact">
@@ -225,22 +211,22 @@
             <div class="name-email">
               <div class="name">
                 <label for="#">Name :</label>
-                <input type="text" placeholder="your name" />
+                <input type="text" class="box" placeholder="your name" />
               </div>
               <div class="email">
                 <label for="#">Email :</label>
-                <input type="email" placeholder="your email" />
+                <input type="email" class="box" placeholder="your email" />
               </div>
             </div>
             <div class="subject">
               <label for="#">Subject</label>
-              <input type="text" placeholder="subject" />
+              <input type="text" class="box" placeholder="subject" />
             </div>
             <div class="message">
               <label for="#">Message</label>
               <textarea name="Message" placeholder="your message"></textarea>
             </div>
-            <button><a href="#">Send Message</a></button>
+            <button class="contact-button"><a href="#">Send Message</a></button>
           </form>
         </div>
         <div class="content">
@@ -283,22 +269,17 @@
       <div id="copyright">
         <div class="icons">
           <a href="https://wa.me/6285603360163"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href=""><i class="fa-brands fa-github"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://instagram.com/agilricardo"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/agilricardo"><i class="fa-brands fa-github"></i></a>
+          <a href="https://t.me/agilricardo"><i class="fa-brands fa-telegram"></i></a>
+          <a href="https://instagram.com/agilekslusif"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div>
           <h6>&copy; Copyright 2023. All right reserved @agilricardo</h6>
         </div>
       </div>
     </div>
-
     <!-- TEXT AUTO INPUT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js"></script>
-
-    <!-- SCROOLREVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
     <!-- CUSTOM JS FILE -->
     <script src="script.js"></script>
   </body>
